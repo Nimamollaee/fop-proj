@@ -2214,6 +2214,9 @@ int run_diffi(int argc, char *argv[])
     }
     return 0;
 }
+int setmsg(){
+
+}
 
 int run_merge(int argc, char*argv[]){
     char command[100];
@@ -2426,7 +2429,6 @@ int run_merge(int argc, char*argv[]){
         }
         
 }
-
 int main(int argc, char *const argv[])
 {
     // printf("%d", argc);
@@ -2689,7 +2691,9 @@ int main(int argc, char *const argv[])
     char nik[MAX_LINE_LENGTH];
     char neo[MAX_LINE_LENGTH];
     // printf("%d", tmp);
-
+if(strcmp(argv[2], "-s") == 0){
+    return setmsg();
+}
     if (tmp)
     {
 
